@@ -1,0 +1,23 @@
+An Introduction to Python Programming - 
+https://www.scaler.com/topics/python/what-is-python/
+
+Features of Python - 
+https://www.scaler.com/topics/python/features-of-python/
+
+What is Python Programming? - 
+https://www.scaler.com/topics/python/what-is-python-programming/
+
+Applications of Python - 
+https://www.scaler.com/topics/python/applications-of-python/
+
+Python Basic Syntax and First Program in Python - 
+https://www.scaler.com/topics/python/python-syntax/
+
+Install Python on Windows - 
+https://www.scaler.com/topics/python/how-to-install-python-in-windows/
+
+How to Install Python on MacOS? - 
+https://www.scaler.com/topics/python/how-to-install-python-on-macos/
+
+How to Install Python on Linux? - 
+https://www.scaler.com/topics/python/install-python-on-linux/
