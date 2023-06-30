@@ -1,12 +1,18 @@
-ClassA_SubA = int(input())
-ClassA_SubB = int(input())
-ClassB_SubA = int(input())
-ClassB_SubB = int(input())
-Avg_ClassA = (ClassA_SubA + ClassA_SubB) / 2
-Avg_ClassB = (ClassB_SubA + ClassB_SubB) / 2
-print(Avg_ClassA)
-print(Avg_ClassB)
-if Avg_ClassA > Avg_ClassB:
-    print(True)
-else:
-    print(False)
+#print perfect squares of first N times from 1
+i = 1
+N = 10
+
+while i <= 10:
+    print(i * i, end=' ')
+    i += 1
+
+
+i = 1
+N = 10
+x = 1
+
+while i <= 10:
+    print(x, end=' ')
+    i += 1
+    x += 1
+    x = i ** 2
