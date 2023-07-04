@@ -16,6 +16,8 @@ print('how', end=' are you')
 
 print('')
 
+
+
 #loops
 #While Loop
 count = 0
@@ -136,3 +138,116 @@ while i <= T:
     n = int(input())
     print(n ** 2)
     i += 1
+
+
+
+#RANGES
+print(list(range(11))) #default values Start=0, End=11, increment=1
+#above prints [o to 10]
+
+print(list(range(5))) #prints [0 to 4]
+
+print(list(7, 8)) #Start=7, End=8, default increment=1
+#above prints [7]
+
+print(list(range(8, 8))) #prints empty []
+
+print(list(range(1, 8, 2))) #Start = 1, End = 8, increment = 2
+#prints [1,3,5,6,7]
+
+print(list(range(10, 1, -3)))
+#prints[10, 7, 4]
+
+print(list(range(10, -5, -3)))
+#prints[10,7,4,1,-2]
+
+
+#FORLOOPS
+#forLoops using Ranges
+for i in range(5):
+    print(i)
+
+#Print 1 to 10
+for i in range(1, 11):
+    print(i, end=' ')
+
+#print 1 to N
+N = int(input())
+
+for i in range(1, N+1):
+    print(i, end=" ")
+
+
+
+#print all perfect squares from numbers 1 to N
+N = int(input())
+
+for i in range(1, N+1):
+    print(i**2, end=' ')
+
+
+
+#print multiples of 4
+N = int(input())
+
+for i in range(1, N+1, 4):
+    print(i, end=' ')
+
+
+#print 6 to 1
+for i in range(6, 0, -1):
+    print(i, end=' ')
+
+
+#print N to 1
+N = int(input())
+
+for i in range(N, 0, -1):
+    print(i, end=',')
+
+
+#print prefect squares from N to 1
+N = int(input())
+
+for i in range(N, 0, -1):
+    print(i**2, end=' ')
+
+
+#example
+N = 7
+S = 2
+
+for i in range(2, N):
+    S += i
+
+print(S)
+
+
+#Sum of evens
+N = int(input())
+S = N(N + 1)
+
+E = 0
+
+for i in range(2, N+1, 2):
+    E += i
+
+print(E)
+
+#Sum of odd
+N = int(input())
+S = N(N + 1)
+
+E = 0
+
+for i in range(1, N+1, 2):
+    E += i
+
+print(E)
+
+
+
+
+
+
+
