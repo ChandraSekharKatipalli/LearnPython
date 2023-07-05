@@ -1,18 +1,11 @@
-#print perfect squares of first N times from 1
-i = 1
-N = 10
+N = 6
 
-while i <= 10:
-    print(i * i, end=' ')
-    i += 1
-
-
-i = 1
-N = 10
-x = 1
-
-while i <= 10:
-    print(x, end=' ')
-    i += 1
-    x += 1
-    x = i ** 2
+for i in range(N):
+    print('*', end='')
+print()
+for i in range(1, N-1):
+    print('*', end='')
+    for j in range(N-i-2):
+        print(" ", end='')
+    print('*')
+print('*')
