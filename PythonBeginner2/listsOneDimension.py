@@ -131,3 +131,98 @@ for i in range(len(nums)):
     if nums[i] < minVal:
         minVal = nums[i]
 print(minVal)
+
+
+#Lists2
+#Removing Data
+#REMOVE -> removes the first occurence
+l = [5, 6, 7, 3, 8, 9, 0]
+l.remove(5)
+print(l)
+
+l = [10, 20, 30, 10, 50]
+l.remove(10)
+print(l)
+
+#POP -> Deletes the data at a particular index
+l = [5, 6, 7, 3, 8, 9, 0]
+l.pop(3)
+print(l)
+
+l.pop() #By default, it pops the last element "-1"
+print(l)
+
+#DEL ->  Deletes the data at a particular index
+l = [10, 20, 30, 10, 50, 70, 60]
+del l[0]
+print(l)
+
+
+
+#List Input
+s = "hello how are you"
+words = s.split()
+print(words)
+
+s = "hello_how_are_you"
+words = s.split('_')
+print(words)
+
+s = "10 20 30 40 50 60"
+l = s.split() #l -> list of strings
+for i in range(len(l)):
+    l[i] = int(l[i])
+print(l)
+
+
+#Searching in lists
+arr = [10, 20, 30, 40, 50, 30, 10, 60, 40]
+
+#IN
+if (30 in arr):
+    print("30 is present")
+else:
+    print("30 is not present")
+
+#INDEX
+idx = arr.index(40) #index of first occurance
+
+
+#Linear Search
+arr = [6, 9, 2, 1, 5, 7]
+x = 1
+
+for i in range(len(arr)):
+    if arr[i] == x:
+        print(i)
+
+arr = [6, 9, 2, 1, 5, 7]
+x = 1
+ans = 'not found'
+
+for i in range(len(arr)):
+    if arr[i] == x:
+        ans = i
+
+print(ans)
+
+#multiple occurances
+arr = [6, 9, 2, 1, 5, 7]
+x = 1
+ans = []
+
+for i in range(len(arr)):
+    if arr[i] == x:
+        ans.append(i)
+
+if len(ans) == 0:
+    print("not found")
+else:
+    print(ans)
+    
+
+def LinearSearch(arr, x):
+    for i in range(len(arr)):
+        if arr[i] == x:
+            return i
+print(LinearSearch([1,2,3,4,5,6,2,4,3,2,2,2], 2))
