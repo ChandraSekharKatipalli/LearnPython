@@ -62,3 +62,59 @@ def bubbleSort(arr):
 print(bubbleSort(l))
 
 
+#Optimised Bubble Sort
+def bubbleSortOptimised(arr):
+    N = len(arr)
+    for i in range(N - 1):
+        #Assume that the array is already sorted
+        isSorted = True
+        for j in range(N - i - 1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                #The assumtion is false
+                isSorted = False
+
+        if isSorted:
+            break
+    return arr
+
+print(bubbleSortOptimised(l))
+#Time complexity
+#Best Case: O(N)
+#Worst Case: O(N^2)
+
+
+
+
+#Selection Sort
+'''
+Selection sort is a sorting algorithm that sorts an array by repeatedly
+finding the minimum element and putting them in ascending order.
+'''
+l = [4, 2, 5, 6, 1, 3]
+
+def selectionSort(arr):
+    N = len(arr)
+
+    for i in range(N-1):
+        minIndex = i
+        for j in range(i, N):
+            if arr[j] < arr[minIndex]:
+                minIndex = j
+        arr[i], arr[minIndex] = arr[minIndex], arr[i]
+    return arr
+
+print(selectionSort(l)) 
+#Time Complexity
+#O(N^2)
+
+
+
+
+#Insertion Sort
+'''
+In insertion sort, an array is divided into two sub arrays: sorted and
+unsorted, where we compare and move every item from the unsorted part 
+to the sorted part till the array is sorted
+'''
+l = [4, 2, 5, 6, 1, 3]
