@@ -118,3 +118,31 @@ unsorted, where we compare and move every item from the unsorted part
 to the sorted part till the array is sorted
 '''
 l = [4, 2, 5, 6, 1, 3]
+
+def insertionSort(arr):
+    N = len(arr)
+
+    for i in range(1, N):
+        curr = arr[i]
+
+        print(f'{arr[:i]} | {arr[i:]}')
+        print('-' * 10)
+
+        #we wish to place 'curr' element at its right position
+        j = i - 1
+        while j >= 0 and arr[j] > curr:
+            arr[j+1] = arr[j]
+            j -= 1
+
+        arr[j+1] = curr
+    return arr
+
+print(insertionSort(l))
+
+
+
+
+#Merge Sort
+'''
+
+'''
