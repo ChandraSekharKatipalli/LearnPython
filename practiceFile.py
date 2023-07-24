@@ -1,10 +1,7 @@
-arr = [10, 12, 8, 2, 9, 3, 4]
-target = 3
-
-def linearSearch(arr, target):
-    for i in range(len(arr)):
-        if arr[i] == target:
-            return i
-    return -1    
+def fibonacci(N):
+    if N == 1:
+        return 1
     
-print(linearSearch(arr, target))
+    return fibonacci(N-1) + fibonacci(N-2)
+
+print(fibonacci(6))
