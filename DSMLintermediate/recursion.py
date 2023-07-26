@@ -70,3 +70,39 @@ def decPrint(N):
     incPrint(N-1)
 
 print(incPrint(7))
+
+
+#Recursion2
+#Complexity Analysis
+'''
+1. Count approx no of recursive calls
+2. Find out cost of each call
+3. 
+'''
+
+
+#Merge two sorted arrays
+A = [-3, 10, 14, 18, 28, 31, 35]
+B = [-5, 0, 4]
+res = []
+
+def mergeSortedArr(A, B):
+    res = []
+    i, j = 0, 0
+
+    while i < len(A) and j < len(B):
+        if A[i] <= B[j]:
+            res.append(A[i])
+            i += 1
+        else:
+            res.append(B[j])
+            j += 1
+            
+    if i<len(A):
+        res += A[i:]
+
+    if j<len(B):
+        res += B[j:]
+    return(res)
+
+print(mergeSortedArr(A, B))
