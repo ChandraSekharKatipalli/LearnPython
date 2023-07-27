@@ -97,7 +97,7 @@ def mergeSortedArr(A, B):
         else:
             res.append(B[j])
             j += 1
-            
+
     if i<len(A):
         res += A[i:]
 
@@ -106,3 +106,35 @@ def mergeSortedArr(A, B):
     return(res)
 
 print(mergeSortedArr(A, B))
+
+
+
+#Merge Sort
+'''
+In Merge sort, the given array is divided into roughly two equal sub - arrays.
+These sub-arrays are divided over and over again into halves
+untill we end up with arrays having only element each. At last,
+we merge the sorted pairs of sub-arrays into a final sorted array.
+'''
+A = [-3, 10, 14, 43, 1, 3, 8, 9]
+
+def mergeSort(arr):
+    N = len(arr)//2
+    if N == 1:
+        return arr
+
+    #1. Divide
+    A = arr[:N]
+    B = arr[N:]
+
+    #2. Sort these sorts recursively
+    A = mergeSort(A)
+    B = mergeSort(B)
+
+    #3. Merge two sorted arrays
+    res = mergeSortedArr(A, B)
+
+    return res
+
+print(mergeSort(A))
+
